@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:backgroundTint="#f5f5f5"
+        app:cardCornerRadius="20sp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/BookImage"
+            android:layout_width="100sp"
+            android:layout_height="150sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="5sp"
+            android:src="@drawable/twentyonelessons"/>
+
+        <TextView
+            android:id="@+id/BookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21 Lessons for the 21st Century"
+            android:layout_toRightOf="@+id/BookImage"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15sp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"/>
+
+
+       <TextView
+           android:id="@+id/BookAuthor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/BookImage"
+           android:text="Yuval Noah Harari"
+           android:layout_below="@id/BookTitle"
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_marginBottom="20sp"
+           android:textColor="#12486B"/>
+
+
+            <ImageView
+                android:id="@+id/ratingimg"
+                android:layout_width="23sp"
+                android:layout_height="23sp"
+                android:layout_marginRight="3sp"
+                android:src="@drawable/baseline_star_rate_24"
+                android:layout_toRightOf="@id/BookImage"
+                android:layout_below="@id/BookAuthor"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/ratingValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ratingimg"
+                android:layout_below="@id/BookAuthor"
+                android:text="4.5"
+                android:gravity="bottom"
+                android:layout_marginRight="25sp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+
+            <TextView
+                android:id="@+id/rupeesSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ratingValue"
+                android:layout_below="@id/BookAuthor"
+                android:text="₹"
+                android:textSize="18sp"
+                android:layout_marginRight="3sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/rupeesValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rupeesSymbol"
+                android:layout_below="@id/BookAuthor"
+                android:text="299"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addTocartButton"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                app:icon="@drawable/baseline_add_shopping_cart_24"
+                app:iconSize="26sp"
+                app:iconTint="@color/black"
+                android:layout_below="@id/BookAuthor"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:cornerRadius="100dp"
+                android:backgroundTint="#f3dcaf"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
+

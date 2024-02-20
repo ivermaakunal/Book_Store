@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logn_in_image"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/baseline_mail_outline_24"
+            android:drawablePadding="10sp"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableLeft="@drawable/baseline_password"
+            android:drawablePadding="10sp"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Log in"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        app:cornerRadius="8dp"
+        android:backgroundTint="#f3dcaf"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Don't have an account ? "/>
+
+        <TextView
+            android:id="@+id/sign_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textSize="16sp"
+            android:textColor="#DFBB75"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

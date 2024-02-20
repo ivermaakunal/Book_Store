@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/nametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/cart_image"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginRight="15sp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/bwcart"/>
+
+        <ImageView
+            android:id="@+id/profilepic"
+            android:layout_toLeftOf="@+id/cart_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15sp"
+            android:layout_gravity="clip_horizontal"
+            android:src="@drawable/bwprofile"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:padding="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:flipInterval="4000"
+        android:autoStart="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bw1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bw2n"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bw3n"/>
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore by Genre"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="15sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/genreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="15sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popularRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"/>
+
+
+</LinearLayout>
+
+</ScrollView>

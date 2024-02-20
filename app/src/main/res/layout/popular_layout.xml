@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170sp"
+        android:layout_height="330sp"
+        app:cardCornerRadius="12sp"
+        app:cardUseCompatPadding="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/popBookImg"
+            android:layout_width="wrap_content"
+            android:layout_height="240sp"
+            android:src="@drawable/themonkwhosoldhisferrari"/>
+
+        <TextView
+            android:id="@+id/popBookTitle"
+            android:layout_marginTop="8sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Monk Who Sold his ferrari"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/popBookAuthor"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robin sharma"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
